@@ -13,7 +13,7 @@ namespace vaja6 {
         public string u_ime;
         public string u_geslo;
         public static int stIg = 1;
-
+		//privzeti konstruktor
         public Igralec() {
             u_ime = "";
             u_geslo = "";
@@ -27,7 +27,7 @@ namespace vaja6 {
                 return id;
             }
         }
-
+		//lastnost u_ime
         public string U_ime {
             get
             {
@@ -38,7 +38,7 @@ namespace vaja6 {
                 u_ime = value.Trim();
             }
         }
-
+		//geslo
         public string U_geslo
         {
             get
@@ -50,7 +50,7 @@ namespace vaja6 {
                 u_geslo = value.Trim();
             }
         }
-
+		//breznik bus sendvic
         public static int StIg
         {
             get { return stIg; }
