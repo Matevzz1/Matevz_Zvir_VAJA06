@@ -20,7 +20,17 @@ namespace vaja6 {
             id = stIg;
             stIg++;
         }
-
+        public Igralec( string u_ime, string u_geslo) {
+            this.u_ime = u_ime.Trim();
+            this.u_geslo = u_geslo.Trim();
+            id = stIg;
+            stIg++;
+        }
+        public Igralec( Igralec igralec) {
+            this.u_ime = igralec.u_ime;
+            this.u_geslo = igralec.u_geslo;
+            this.id = igralec.id;
+        }
         public int Id {
             get
             {
